@@ -49,7 +49,8 @@ function Home() {
     console.log(blockchain, "helo123");
   }, [blockchain]);
   const handlePrevHash = () => {
-    var prevHash = "First block";
+    var prevHash =
+      "00000000000000000000000000000000000000000000000000000000000000";
     if (blockchain.length != 0) {
       prevHash = blockchain[blockchain.length - 1].currentHash;
     }
@@ -154,7 +155,7 @@ function Home() {
         })}
       </div>
       <Modal
-        title={`Sửa block ${indexSelected + 1}`}
+        title={`Tấn công block ${indexSelected + 1}`}
         open={isModalOpen}
         onOk={handleOk}
         onCancel={handleCancel}
